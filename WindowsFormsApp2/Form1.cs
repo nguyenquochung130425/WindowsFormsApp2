@@ -19,39 +19,34 @@ namespace WindowsFormsApp2
             LoadSize();
         }
 
-        // Nạp danh sách font
         private void LoadFont()
         {
             foreach (FontFamily font in FontFamily.Families)
             {
                 cbFont.Items.Add(font.Name);
             }
-            cbFont.SelectedItem = "Tahoma"; // mặc định
+            cbFont.SelectedItem = "Tahoma"; 
         }
 
-        // Nạp danh sách cỡ chữ
         private void LoadSize()
         {
             for (int i = 8; i <= 72; i += 2)
             {
                 cbSize.Items.Add(i);
             }
-            cbSize.SelectedItem = 14; // mặc định
+            cbSize.SelectedItem = 14; 
         }
 
-        // Đổi font
         private void cbFont_SelectedIndexChanged(object sender, EventArgs e)
         {
             ChangeFontStyle();
         }
 
-        // Đổi size
         private void cbSize_SelectedIndexChanged(object sender, EventArgs e)
         {
             ChangeFontStyle();
         }
 
-        // Hàm đổi định dạng
         private void ChangeFontStyle()
         {
             if (cbFont.SelectedItem == null || cbSize.SelectedItem == null) return;
@@ -86,7 +81,7 @@ namespace WindowsFormsApp2
             ChangeFontStyle();
         }
 
-        // Menu Thoát
+        
         private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
