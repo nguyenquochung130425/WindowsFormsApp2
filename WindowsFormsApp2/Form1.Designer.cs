@@ -37,9 +37,7 @@
             this.rtbEditor = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            //
-            // menuStrip1
-            //
+            
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.heThongToolStripMenuItem,
             this.dinhDangToolStripMenuItem});
@@ -59,9 +57,7 @@
             this.thoatToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.thoatToolStripMenuItem.Text = "Thoát";
             this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
-            //
-            // dinhDangToolStripMenuItem
-            //
+           
             this.dinhDangToolStripMenuItem.Name = "dinhDangToolStripMenuItem";
             this.dinhDangToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.dinhDangToolStripMenuItem.Text = "Định dạng";
@@ -81,9 +77,7 @@
             this.cbSize.Size = new System.Drawing.Size(60, 21);
             this.cbSize.TabIndex = 2;
             this.cbSize.SelectedIndexChanged += new System.EventHandler(this.cbSize_SelectedIndexChanged);
-            //
-            // btnBold
-            //
+            
             this.btnBold.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnBold.Location = new System.Drawing.Point(260, 40);
             this.btnBold.Name = "btnBold";
